@@ -1,0 +1,38 @@
+[checker]
+source_timeout_seconds = 8.0
+stream_timeout_seconds = 4.0
+channel_timeout_seconds = 8.0
+global_concurrency = 80
+per_host_concurrency = 6
+country_concurrency = 4
+history_window = 5
+min_consecutive_successes = 2
+min_success_rate = 0.80
+bootstrap_rounds = 2
+bootstrap_pause_seconds = 0.2
+max_history_rows_per_stream = 20
+allow_http = true
+block_temporary_urls = true
+web_origin = ""
+user_agent = "ChannelWatch/0.3 (+public-stream-health-checker)"
+
+[publishing]
+output_dir = "public/data"
+state_dir = "state"
+drop_guard_ratio = 0.30
+drop_guard_min_previous = 10
+
+[filters]
+blocked_name_patterns = ["xxx", "adult", "porn", "porno"]
+
+[[builtin_sources]]
+id = "iptv_org"
+url_template = "https://iptv-org.github.io/iptv/countries/{country_lower}.m3u"
+mode = "fixed"
+priority = 10
+
+[[builtin_sources]]
+id = "free_tv"
+url = "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+mode = "attribute"
+priority = 20

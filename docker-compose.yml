@@ -1,0 +1,12 @@
+services:
+  channelwatch:
+    build: .
+    environment:
+      CHANNELWATCH_STATE_DIR: /app/state
+      CHANNELWATCH_OUTPUT_DIR: /app/public/data
+      CHANNELWATCH_WEB_ORIGIN: ${CHANNELWATCH_WEB_ORIGIN:-}
+    volumes:
+      - ./state:/app/state
+      - ./public/data:/app/public/data
+      - ./config:/app/config:ro
+    command: ["python", "-m", "channelwatch", "run"]

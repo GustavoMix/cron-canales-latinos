@@ -1,0 +1,79 @@
+[countries.BO]
+name = "Bolivia"
+custom_urls = []
+
+[countries.AR]
+name = "Argentina"
+custom_urls = []
+
+[countries.BR]
+name = "Brasil"
+custom_urls = []
+
+[countries.CL]
+name = "Chile"
+custom_urls = []
+
+[countries.PE]
+name = "Perú"
+custom_urls = []
+
+[countries.CO]
+name = "Colombia"
+custom_urls = []
+
+[countries.EC]
+name = "Ecuador"
+custom_urls = []
+
+[countries.PY]
+name = "Paraguay"
+custom_urls = []
+
+[countries.UY]
+name = "Uruguay"
+custom_urls = []
+
+[countries.VE]
+name = "Venezuela"
+custom_urls = []
+
+[countries.MX]
+name = "México"
+custom_urls = []
+
+[countries.PA]
+name = "Panamá"
+custom_urls = []
+
+[countries.CR]
+name = "Costa Rica"
+custom_urls = []
+
+[countries.GT]
+name = "Guatemala"
+custom_urls = []
+
+[countries.HN]
+name = "Honduras"
+custom_urls = []
+
+[countries.SV]
+name = "El Salvador"
+custom_urls = []
+
+[countries.NI]
+name = "Nicaragua"
+custom_urls = []
+
+[countries.DO]
+name = "República Dominicana"
+custom_urls = []
+
+[countries.PR]
+name = "Puerto Rico"
+custom_urls = []
+
+[countries.ES]
+name = "España"
+custom_urls = []

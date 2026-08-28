@@ -1,0 +1,24 @@
+CHANNELWATCH CRON - PASOS RAPIDOS
+=================================
+
+1) Crea en GitHub un repositorio PUBLICO llamado exactamente:
+   channelwatch-cron
+
+2) Sube TODO el contenido de esta carpeta a la rama main.
+
+3) GitHub -> Settings -> Pages -> Source -> GitHub Actions.
+
+4) Para generar los JSON por primera vez sin esperar al domingo:
+   GitHub -> Actions -> Weekly channel check and JSON publish -> Run workflow.
+
+5) Desde ese momento corre automaticamente UNA VEZ POR SEMANA.
+   Domingo 08:00 UTC / 04:00 Bolivia.
+
+6) Los 20 paises se reparten en trabajos independientes,
+   con un maximo de 5 paises ejecutandose al mismo tiempo.
+
+URL esperada:
+https://TU-USUARIO.github.io/channelwatch-cron/data/countries.json
+
+No necesitas configurar el origen web: GitHub Actions usa automaticamente
+https://TU-USUARIO.github.io
